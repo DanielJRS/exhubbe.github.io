@@ -1,7 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+@font-face {
+    font-family: Clash_Regular;
+    src: url(/source/img/font/Clash_Regular.otf);
+}
 
-* {
+html {
     background-color: #2C3131;
+}
+* {
     color: white;
     box-sizing: border-box;
     margin: 0;
@@ -32,14 +38,57 @@
 }
 
 .header-barra-logo {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
     /* background-color: tomato; */
     flex-grow: 1;
 }
 
+.header-barra-logo-img {
+    /* background-color: blueviolet; */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    transform: scale(1);
+    transition: 0.5s;
+}
+
+.header-barra-logo-img:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
 .header-barra-menu {
-    /* background-color: chartreuse; */
+    /* background-color: rgb(170, 170, 170); */
     flex-grow: 4;
     justify-content: space-evenly;
+    font-size: 1.2em;
+}
+
+.header-barra-menu-items {
+    /* background-color: tomato; */
+    width: 12%;
+    height: 50%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.header-barra-menu-items:hover {
+    height: 90%;
+    border-radius: 10px;
+    background-color: #F59C00;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    box-shadow: rgb(0, 0, 0) 0px 0px 10px 0px;
+    transition: 0.5s;
 }
 
 .header-barra-user {
@@ -48,10 +97,273 @@
     justify-content: space-evenly;
 }
 
+.header-barra-user-btn-b, .header-barra-user-btn-a {
+    background-color: #181B1B;
+    width: 40%;
+    height: 50%;
+    border-radius: 5px;
+    border: 2px solid black;
+    box-shadow: rgb(0, 0, 0) 0px 0px 10px 0px;
+    transform: scale(1);
+    transition: 0.5s;
+}
+
+.header-barra-user-btn-a {
+    background-color: #181B1B;
+}
+
+.header-barra-user-btn-a:hover, .header-barra-user-btn-b:hover {
+    background-color: #19AD01;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.header-barra-user-login-texto, .header-barra-user-register-texto {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
 .main-banner {
-    height: 70vh;
-    background: url(https://danieljrs.github.io/exhubbe.github.io/source/img/font/banner.svg);
+    height: 90vh;
+    background: url(/source/img/font/bannerimg.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: right;
+    align-items: end;
+}
+
+.main-banner-titulo {
+    margin-bottom: 20px;
+    margin-right: 20px;
+    font-family: Clash_Regular;
+    text-align: center;
+    text-shadow: #F59C00;
+}
+
+.main-container-intermediario {
+    width: 100%;
+    height: 100vh;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 3%;
+    padding-right: 3%;
+    background-color: tomato;
+}
+
+.main-container-intermediario-bloco {
+    background-color: brown;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main-container-intermediario-bloco-img {
+    background-color: blueviolet;
+    background: url(/source/img/font/castelo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40%;
+    height: 100%;
+}
+
+.main-container-intermediario-bloco-conteudo {
+    background-color: #95887A;
+    width: 60%;
+    height: 100%;
+    padding-bottom: 7%;
+}
+
+.main-container-intermediario-bloco-conteudo-titulo {
+    background-color: green;
+    width: 100%;
+    height: 25%;
+    display: flex;
+}
+
+.main-container-intermediario-bloco-conteudo-titulo-texto {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: start;
+    align-items: end;
+    width: 100%;
+    height: 100%;
+    font-family: Clash_Regular;
+    font-size: 2em;
+    margin-left: 10%;
+}
+
+.main-container-intermediario-bloco-conteudo-bloco1 {
+    background-color: #95887A;
+    width: 100%;
+    height: 75%;
+    border-radius: 70px;
+    border: 2px solid black;
+    padding: 1%;
+}
+
+.main-container-intermediario-bloco-conteudo-bloco2 {
+    background-color: #433B38;
+    width: 100%;
+    height: 39%;
+    margin-bottom: 1%;
+    border-radius: 70px 70px 0px 0px;
+    border: 2px solid black;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1%;
+}
+
+.main-container-intermediario-bloco-conteudo-bloco2-b1, .main-container-intermediario-bloco-conteudo-bloco2-b2, .main-container-intermediario-bloco-conteudo-bloco2-b3, .main-container-intermediario-bloco-conteudo-bloco2-b4 {
+    background-color: cadetblue;
+    width: 20%;
+    height: 100%;
+    border-radius: 30px;
+}
+
+.main-container-intermediario-bloco-conteudo-bloco2-b1 {
+    background: url(https://api-assets.clashofclans.com/badges/512/ZP5n-jjs88OJGx7UN7XPOL_YRFgdr7RYEKSVyimgxyU.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-container-intermediario-bloco-conteudo-bloco2-b2 {
+    background-color: #74327B;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px solid black;
+    box-shadow: rgb(0, 0, 0) 0px 0px 10px 0px;
+    padding: 0.5%;
+}
+
+.main-container-intermediario-bloco-conteudo-bloco2-b2-titulo {
+    /* background-color: tomato; */
+    width: 100%;
+    height: 50%;
+    border-radius: 30px 30px 0px 0px;
+}
+
+.main-container-intermediario-bloco-conteudo-bloco2-b2-titulo-img {
+    background: url(/source/img/font/img-guerra.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: end;
+    font-size: 1.5em;
+    font-family: Clash_Regular;
+}
+
+.main-container-intermediario-bloco-conteudo-bloco2-b2-vitoria, .main-container-intermediario-bloco-conteudo-bloco2-b2-empate, .main-container-intermediario-bloco-conteudo-bloco2-b2-derrota {
+    background-color: #19AD01;
+    width: 33.33%;
+    height: 50%;
+    border: 2px solid black;
+    border-radius: 0px 0px 0px 30px;
+}
+
+.main-container-intermediario-bloco-conteudo-bloco2-b2-empate {
+    background-color: #A9A9A9;
+    border-radius: 0px 0px 0px 0px;
+}
+
+.main-container-intermediario-bloco-conteudo-bloco2-b2-derrota {
+    background-color: #990000;
+    border-radius: 0px 0px 30px 0px;
+}
+
+.main-container-intermediario-bloco-conteudo-bloco2-b3 {
+    background-color: #BF9000;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    box-shadow: rgb(0, 0, 0) 0px 0px 10px 0px;
+    padding: 0.5%;
+}
+
+.main-container-intermediario-bloco-conteudo-bloco2-b3-titulo {
+    /* background-color: tomato; */
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px 30px 0px 0px;
+}
+
+.main-container-intermediario-bloco-conteudo-bloco2-b3-titulo-texto, .main-container-intermediario-bloco-conteudo-bloco2-b3-texto-conteudo {
+    /* background-color: tomato; */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: right;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    font-family: Clash_Regular;
+    font-size: 1.4em;
+}
+
+.main-container-intermediario-bloco-conteudo-bloco2-b3-titulo-img, .main-container-intermediario-bloco-conteudo-bloco2-b3-texto-img {
+    background: url(/source/img/font/rainha.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-color: green; */
+    width: 50%;
+    height: 100%;
+}
+
+.main-container-intermediario-bloco-conteudo-bloco2-b3-texto {
+    background-color: #8C6A00;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: right;
+    align-items: center;
+    border-radius: 0px 0px 30px 30px;
+}
+
+.main-container-intermediario-bloco-conteudo-bloco2-b3-texto-img {
+    width: 30%;
+    background: url(/source/img/font/img-ouroI.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.main-container-intermediario-bloco-conteudo-bloco2-b3-texto-conteudo {
+    width: 70%;
+    justify-content: center;
+}
+
+.main-container-intermediario-bloco-conteudo-bloco3 {
+    background-color: #433B38;
+    width: 100%;
+    height: 59%;
+    margin-top: 1%;
+    border-radius: 0px 0px 70px 70px;
+    border: 2px solid black;
 }
