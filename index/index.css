@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
+* {
+    background-color: #2C3131;
+    color: white;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Concert One", sans-serif;;
+}
+
+.header-barra {
+    background-color: rgba(0, 0, 0, 0.5);
+    max-width: 1920px;
+    width: 100%;
+    height: 10vh;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+
+.header-barra-logo, .header-barra-menu, .header-barra-user {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.header-barra-logo {
+    /* background-color: tomato; */
+    flex-grow: 1;
+}
+
+.header-barra-menu {
+    /* background-color: chartreuse; */
+    flex-grow: 4;
+    justify-content: space-evenly;
+}
+
+.header-barra-user {
+    /* background-color: brown; */
+    flex-grow: 1;
+    justify-content: space-evenly;
+}
+
+.main-banner {
+    height: 70vh;
+    background: url(/source/img/font/banner.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
