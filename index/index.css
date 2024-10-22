@@ -234,10 +234,10 @@ html {
 }
 
 .main-container-intermediario-bloco-conteudo-bloco2-b1 {
-    background: url(https://api-assets.clashofclans.com/badges/512/ZP5n-jjs88OJGx7UN7XPOL_YRFgdr7RYEKSVyimgxyU.png);
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .main-container-intermediario-bloco-conteudo-bloco2-b2 {
@@ -279,6 +279,11 @@ html {
     height: 50%;
     border: 2px solid black;
     border-radius: 0px 0px 0px 30px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7em;
 }
 
 .main-container-intermediario-bloco-conteudo-bloco2-b2-empate {
@@ -314,7 +319,7 @@ html {
 }
 
 .main-container-intermediario-bloco-conteudo-bloco2-b3-titulo-texto, .main-container-intermediario-bloco-conteudo-bloco2-b3-texto-conteudo {
-    /* background-color: tomato; */
+    background-color: tomato;
     display: flex;
     flex-flow: row wrap;
     justify-content: right;
